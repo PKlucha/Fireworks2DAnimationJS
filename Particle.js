@@ -13,7 +13,6 @@ function Particle(x, y, burstRate, partColor, firework) {
 		this.vel.mult(random(1, 3));
 	}
 
-
 	this.applyForce = function(force){
 		this.acc.add(force);
 	}
@@ -46,7 +45,5 @@ function Particle(x, y, burstRate, partColor, firework) {
 			fill(102);
 			rect(this.pos.x, this.pos.y, 2, 10);
 		}
-		
-
 	}
 }
