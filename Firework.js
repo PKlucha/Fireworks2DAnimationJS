@@ -11,7 +11,6 @@ function Firework() {
 	this.exploded = false;
 	this.particles = [];
 
-
 	this.update = function() {
 		if(!this.exploded) {
 			this.firework.applyForce(gravity);
@@ -29,7 +28,6 @@ function Firework() {
 				this.particles.splice(i, 1);
 			}
 		}
-
 	}
 
 	this.explode = function() {
@@ -37,7 +35,6 @@ function Firework() {
 			var p = new Particle(this.firework.pos.x, this.firework.pos.y, this.burstRate, this.partColor);
 			this.particles.push(p);
 		}
-
 	}
 
 	this.show = function() {
